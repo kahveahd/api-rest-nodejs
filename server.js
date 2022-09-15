@@ -1,11 +1,10 @@
 const express = require('express')
 const initDatabaseMongo = require('./config/database')
 const bodyParser = require('body-parser')
+const cities = require('./src/routes/city')
 
 const app = express()
 const port = 3001
-
-const cities = require('./src/routes/city')
 
 app.use(
     bodyParser.json({
